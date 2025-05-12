@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./globals.css";
 
@@ -262,3 +263,27 @@ const home = () => {
 };
 
 export default home;
+=======
+
+import About from "./About"
+import Cards from "./Cards";
+import Projects from "./Projects";
+import Messages from "./Messages";
+import Contact from "./Contact";
+
+
+
+
+export default function Home() {
+
+  return (
+    <div>
+      <About />
+      <Cards />
+      <Projects />
+      <Messages />
+      <Contact />
+    </div>
+  );
+}
+>>>>>>> 61371e1 (salom)

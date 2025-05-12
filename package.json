@@ -1,9 +1,17 @@
 {
+<<<<<<< HEAD
   "name": "next-imt",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+=======
+  "name": "landind-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+>>>>>>> 61371e1 (salom)
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
