@@ -1,48 +1,71 @@
-import React from 'react'
-import Image from 'next/image';
-import port1 from '@/assets/images/port-1.svg';
-import port2 from '@/assets/images/port-2.svg';
-import port3 from '@/assets/images/port-3.svg';
-import soya from '@/assets/images/soya.svg'
-import Projects from '../Projects';
-import Contact from '../Contact';
+'use client';
 
-function page() {
+import { useTranslation } from 'react-i18next';
+import './page.css';
+
+const PortfolioPage = () => {
+  const { t } = useTranslation();
 
   return (
-
-    <div className='container mx-auto text-white'>
-
-      <div>
-
-        <div className='pt-[260px] flex relative pb-[200px]'>
-
-          <div className='leading-[26px]'>
-            <h1 className='text-[48px] font-bold'>Tajribamiz davomida</h1> <br />
-            <h1 className='text-[48px] font-normal'>turli xil hajmdagi</h1> <br />
-            <h1 className='text-[48px] font-bold text-[#5A00DB]'>IT loyihalarini</h1> <br />
-            <h1 className='text-[48px] font-bold'>ishga tushira oldik</h1>
-          </div>
-
-          <div className=''>
-            <Image className='absolute right-[310px]' src={port2} alt='service-img' />
-            <Image className='absolute right-[30px] top-[230px]' src={port1} alt='service-img' />
-            <Image className='absolute right-[290px] top-[430px]' src={port3} alt='service-img' />
-
-            <Image className='right-[-150px] absolute top-[50px] -z-20' src={soya} alt='soya-img' />
-
-            <div className='w-[270px] h-[270px] rounded-[10px] right-[60px] top-[220px] -z-10 bg-[#ffffff16] absolute'></div>
-          </div>
-
+    <div className='portfolio-container'>
+      <div className="top-section">
+        <div className="title-wrapper">
+          <h1>
+            {t("chime.tok1")} <br />
+            <span className="subtitle">{t("chime.tok2")}</span> <br />
+            <span className="highlighted-text">{t("chime.tok3")}</span> <br />
+            {t("chime.tok4")}
+          </h1>
         </div>
-
+        <div className="image-wrapper">
+          <img src="./img/port1.png" alt="Portfolio" />
+        </div>
       </div>
 
-      <Projects />
-      <Contact />
+      <div className="banner-section">
+        <h1>{t("chime.tok5")}</h1>
+        <p>{t("chime.tok6")}</p>
+      </div>
 
+      <div className="content-section">
+        <div className="content-block">
+          <img src="./img/ran.svg" alt="Feature 1" />
+        </div>
+        <div className="content-block">
+          <h3>{t("chime.tok7")}</h3>
+          <p>{t("chime.tok8")}</p>
+          <button className="action-button">{t("chime.tok9")}</button>
+        </div>
+      </div>
+
+      <div className="content-section reverse">
+        <div className="content-block">
+          <h3>{t("chime.tok10")}</h3>
+          <p>{t("chime.tok11")}</p>
+          <button className="action-button">{t("chime.tok9")}</button>
+        </div>
+        <div className="content-block">
+          <img src="./img/re1.svg" alt="Feature 2" />
+        </div>
+      </div>
+
+      <div className="content-section">
+        <div className="content-block">
+          <img src="./img/re2.svg" alt="Feature 3" />
+        </div>
+        <div className="content-block">
+          <h3>{t("chime.tok12")}</h3>
+          <p>{t("chime.tok11")}</p>
+          <button className="action-button">{t("chime.tok9")}</button>
+        </div>
+      </div>
+
+      <div className="banner-section">
+        <h1>{t("contact_section.title")}</h1>
+        <p>{t("contact_section.subtitle")}</p>
+      </div>
     </div>
   )
 }
 
-export default page
+export default PortfolioPage;

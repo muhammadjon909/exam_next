@@ -1,289 +1,166 @@
-<<<<<<< HEAD
+'use client';
+
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import "./globals.css";
 
-const home = () => {
+const Home = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className="container">
-      <div className="hom">
-        <div className="hom__1">
+    <div className="main-container">
+      <div className="hero">
+        <div className="hero-left">
           <div>
             <h1>
-              Yuqori sifatdagi <br />
-              <span className="hom__span">aniqlikka asoslanib </span>
-              <br />
-              <span> istalgan turdagi</span> <br />
-              dasturlarni tayyorlaymiz
+              {t("hero.title1")} <br />
+              <span className="hero-span">{t("hero.title2")}</span><br />
+              <span className="hero-highlight">{t("hero.title3")}</span><br />
+              {t("hero.title4")}
             </h1>
-            <button className="hom__1__btn">Xizmatlar haqida</button>
+            <button className="hero-button">{t("hero.button")}</button>
           </div>
         </div>
 
-        <div className="hom__2">
-          <img src="./img/notbuk.svg" alt="" />
-
-          <div className="pos1"></div>
-          <div className="pos2"></div>
-          <div className="pos3">
-            <div className="box-container">
-              <div className="box">
-                <img src="/icon/v1.svg" alt="chart" />
+        <div className="hero-right">
+          <img src="./img/notbuk.svg" alt="Notebook" />
+          <div className="hero-overlay-1"></div>
+          <div className="hero-overlay-2"></div>
+          <div className="hero-info-boxes">
+            <div className="info-box-container">
+              <div className="info-box">
+                <img className="icon" src="/icon/v1.svg" alt="chart" />
                 <div>
-                  <h3>7+ yillik</h3>
-                  <p>Umumiy tajriba</p>
+                  <h3>{t("experience.years")}</h3>
+                  <p>{t("experience.description1")}</p>
                 </div>
               </div>
-              <div className="box">
-                <img src="./icon/v2.svg" alt="group" />
+              <div className="info-box">
+                <img className="icon" src="./icon/v2.svg" alt="group" />
                 <div>
-                  <h3>5+</h3>
-                  <p>Yirik loyihalar</p>
+                  <h3>{t("experience.projects")}</h3>
+                  <p>{t("experience.description2")}</p>
                 </div>
               </div>
-              <div className="box">
-                <img src="./icon/v3.svg" alt="web" />
+              <div className="info-box">
+                <img className="icon" src="./icon/v3.svg" alt="web" />
                 <div>
-                  <h3>8+</h3>
-                  <p>Xizmat turlari</p>
+                  <h3>{t("experience.services")}</h3>
+                  <p>{t("experience.description3")}</p>
                 </div>
               </div>
-              <div className="box">
-                <img src="./icon/v4.svg" alt="security" />
+              <div className="info-box">
+                <img className="icon" src="./icon/v4.svg" alt="security" />
                 <div>
-                  <h3>100%</h3>
-                  <p>Xavfsizlik</p>
+                  <h3>{t("experience.security")}</h3>
+                  <p>{t("experience.description4")}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="hom_cont">
+
+      <div className="about-section">
         <div>
           <p>
-            Biz haqimizda <br />
-            <span>Qisqacha ma’lumot</span>
+            {t("about.title")} <br />
+            <span>{t("about.subtitle")}</span>
           </p>
         </div>
       </div>
 
-      <div className="hom__bxs">
-        <div className="h-boxs">
-          <img src="./img/p0.svg" alt="" />
-
-          <div className="ranginfilter">
-            <h3>Boshlanishi</h3>
-            <p>
-              Biz --- dan ish boshladik va ---- larni oldimizga maqsad qilib
-              qo’ydik
-            </p>
+      <div className="features">
+        <div className="feature">
+          <img src="./img/p0.svg" alt="Feature 1" />
+          <div className="feature-content">
+            <h3>{t("about.box1.title")}</h3>
+            <p>{t("about.box1.text")}</p>
           </div>
         </div>
 
-        <div className="h-boxs">
-          <img src="./img/p1.svg" alt="" />
-
-          <div className="ranginfilter">
-            <h3>Uzoq muddatli loyihalar</h3>
-            <p>
-              Tajribamiz davomida umumiy hisobda - - loyiha uchun -- - muddatda
-              ishlab topshirdik
-            </p>
+        <div className="feature">
+          <img src="./img/p1.svg" alt="Feature 2" />
+          <div className="feature-content">
+            <h3>{t("about.box2.title")}</h3>
+            <p>{t("about.box2.text")}</p>
           </div>
         </div>
 
-        <div className="h-boxs">
-          <img src="./img/p3.svg" alt="" />
-
-          <div className="ranginfilter">
-            <h3>Jamoamiz kengaymoqda</h3>
-            <p>
-              Jamoamiz safi esa tobora kengaymoqda. Boshida - kishidan
-              boshlangan faoliyatimiz hozirda -- kishi bilan davom etmoqda
-            </p>
+        <div className="feature">
+          <img src="./img/p3.svg" alt="Feature 3" />
+          <div className="feature-content">
+            <h3>{t("about.box3.title")}</h3>
+            <p>{t("about.box3.text")}</p>
           </div>
         </div>
       </div>
-      <p className="raning-p">
-        Bu yerda esa yana ko’proq ma’lumotlar berilishi kerak. <br />
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged.
-      </p>
 
-      <div className="baner">
-        <h1>Loyihalarimiz</h1>
-        <p>biz haqimizda gapirsin !</p>
+      <p className="more-info">{t("more_info")}</p>
+
+      <div className="banner">
+        <h1>{t("projects.title")}</h1>
+        <p>{t("projects.subtitle")}</p>
       </div>
 
-      <div className="cont_divs">
-        <div className="divs">
-          <img src="./img/ran.svg" alt="" />
+      <div className="project-sections">
+        <div className="project">
+          <img src="./img/ran.svg" alt="Project 1" />
         </div>
-        <div className="divs">
-          <h3>Tourmad loyihasi</h3>
-          <p>
-            Tourmad – O‘zbekistonning ichki turizimini rivojlantirish maqsadida
-            ishlab chiqilgan bu web sayt o‘zida bir necha service larni o‘z
-            ichiga jamlagan bo‘lib ulardan: Mehmonxona xizmari, Restoran
-            xizmati, Gitlik xizmati, Mashinada sayohat qilish uchun haydovchilar
-            xizmari va boshqa ko‘plab xizmarlarni o‘z ichiga oladi. Bundan
-            tashqari saytdan o‘zingiz uchun qayerlarga boorish kerakligini va
-            qayerlarda xizmat ko‘satish qancha ekanligini ko‘rishingiz va
-            o‘zingiz uchun oldindan buyurtma qilishingiz mumkin.
-          </p>
-          <button className="btn">Loyihani ko’rish</button>
+        <div className="project-details">
+          <h3>{t("chime.tok7")}</h3>
+          <p>{t("chime.tok8")}</p>
+          <button className="cta-button">{t("chime.tok9")}</button>
         </div>
       </div>
 
-      <div className="cont_divs">
-        <div className="divs decing">
-          <h3>ProRun loyihasi</h3>
-          <p>
-            Prorun.uz – bu saytda tez-tez bo‘lib o‘tadigan yugurish bo‘yicha
-            musobaqalar bo‘lib o‘tadi va siz saytdan ro‘ yxatdan o‘tgan holda
-            istalgan yoki har bir musobaqada qatnashishingiz mumkin.  Nima uchun
-            sayt qurilgan? Musobaqalarda chet ellik ishtirokchilar bo‘lgani bois
-            ularga va boshqa qatnashchilarga ro‘yxatdan o‘tishni oson qilish
-            uchun yangi web ilova ishlab chiqildi.
-          </p>
-          <button className="btn">Loyihani ko’rish</button>
+      <div className="project-sections reverse">
+        <div className="project-details">
+          <h3>{t("chime.tok10")}</h3>
+          <p>{t("chime.tok11")}</p>
+          <button className="cta-button">{t("chime.tok9")}</button>
         </div>
-        <div className="divs">
-          <img src="./img/re1.svg" alt="" />
+        <div className="project">
+          <img src="./img/re1.svg" alt="Project 2" />
         </div>
       </div>
 
-      <div className="cont_divs">
-        <div className="divs">
-          <img src="./img/re2.svg" alt="" />
+      <div className="project-sections">
+        <div className="project">
+          <img src="./img/re2.svg" alt="Project 3" />
         </div>
-        <div className="divs">
-          <h3>Xalq trans loyihasi</h3>
-          <p>
-            Bu yerda esa yana ko’proq ma’lumotlar berilishi kerak. Lorem
-            Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <button className="btn">Loyihani ko’rish</button>
+        <div className="project-details">
+          <h3>{t("chime.tok12")}</h3>
+          <p>{t("chime.tok11")}</p>
+          <button className="cta-button">{t("chime.tok9")}</button>
         </div>
       </div>
 
-      <div className="btn_conts">
-        <button className="buton">Boshqa loyihalarni ko’rish</button>
+      <div className="all-projects-button">
+        <button className="view-all-button">{t("projects.all_button")}</button>
       </div>
 
-      <div className="baner">
-        <h1>Xizmat turlari</h1>
-        <p>Dasturlash sohasidagi eng talabgir xizmat turlaridan quyidagilar:</p>
+      <div className="services-section">
+        <h1>{t("services_section.title")}</h1>
+        <p>{t("services_section.subtitle")}</p>
       </div>
 
-      <div className="posinbx">
-
-        <div className="posin_bx">
-          <img src="./img/ic0.svg" alt="" />
-          <h3>Korporativ veb-sayt</h3>
-          <p>
-            Kompaniyaning umumiy ma'lumotini taqdim etish, xizmatlar yoki mahsulotlar haqida ma'lumot berish.
-          </p>
-        </div>
-        <div className="posin_bx">
-          <img src="./img/ic1.svg" alt="" />
-          <h3>Korporativ veb-sayt</h3>
-          <p>
-            Kompaniyaning umumiy ma'lumotini taqdim etish, xizmatlar yoki mahsulotlar haqida ma'lumot berish.
-          </p>
-        </div>
-        <div className="posin_bx">
-          <img src="./img/ic2.svg" alt="" />
-          <h3>Korporativ veb-sayt</h3>
-          <p>
-            Kompaniyaning umumiy ma'lumotini taqdim etish, xizmatlar yoki mahsulotlar haqida ma'lumot berish.
-          </p>
-        </div>
-        <div className="posin_bx">
-          <img src="./img/ic3.svg" alt="" />
-          <h3>Korporativ veb-sayt</h3>
-          <p>
-            Kompaniyaning umumiy ma'lumotini taqdim etish, xizmatlar yoki mahsulotlar haqida ma'lumot berish.
-          </p>
-        </div>
-        <div className="posin_bx">
-          <img src="./img/ic1.svg" alt="" />
-          <h3>Korporativ veb-sayt</h3>
-          <p>
-            Kompaniyaning umumiy ma'lumotini taqdim etish, xizmatlar yoki mahsulotlar haqida ma'lumot berish.
-          </p>
-        </div>
-        <div className="posin_bx">
-          <img src="./img/ic1.svg" alt="" />
-          <h3>Korporativ veb-sayt</h3>
-          <p>
-            Kompaniyaning umumiy ma'lumotini taqdim etish, xizmatlar yoki mahsulotlar haqida ma'lumot berish.
-          </p>
-        </div>
-        <div className="posin_bx">
-          <img src="./img/ic1.svg" alt="" />
-          <h3>Korporativ veb-sayt</h3>
-          <p>
-            Kompaniyaning umumiy ma'lumotini taqdim etish, xizmatlar yoki mahsulotlar haqida ma'lumot berish.
-          </p>
-        </div>
-        <div className="posin_bx">
-          <img src="./img/ic1.svg" alt="" />
-          <h3>Korporativ veb-sayt</h3>
-          <p>
-            Kompaniyaning umumiy ma'lumotini taqdim etish, xizmatlar yoki mahsulotlar haqida ma'lumot berish.
-          </p>
-        </div>
-        <div className="posin_bx">
-          <img src="./img/ic1.svg" alt="" />
-          <h3>Korporativ veb-sayt</h3>
-          <p>
-            Kompaniyaning umumiy ma'lumotini taqdim etish, xizmatlar yoki mahsulotlar haqida ma'lumot berish.
-          </p>
-        </div>
-
+      <div className="services-list">
+        {[...Array(9)].map((_, idx) => (
+          <div className="service" key={idx}>
+            <img src={`./img/ic${idx % 4}.svg`} alt={`Service ${idx + 1}`} />
+            <h3>{t(`services.service${idx + 1}.title`)}</h3>
+            <p>{t(`services.service${idx + 1}.desc`)}</p>
+          </div>
+        ))}
       </div>
 
-      <div className="baner">
-        <h1>Biz bilan aloqa</h1>
-        <p>Loyihangizni qanday realizatsiya qilish haqida batafsil suhbatlashamiz</p>
+      <div className="contact-section">
+        <h1>{t("contact_section.title")}</h1>
+        <p>{t("contact_section.subtitle")}</p>
       </div>
-
     </div>
   );
 };
 
-export default home;
-=======
-
-import About from "./About"
-import Cards from "./Cards";
-import Projects from "./Projects";
-import Messages from "./Messages";
-import Contact from "./Contact";
-
-
-
-
-export default function Home() {
-
-  return (
-    <div>
-      <About />
-      <Cards />
-      <Projects />
-      <Messages />
-      <Contact />
-    </div>
-  );
-}
->>>>>>> 61371e1 (salom)
+export default Home;

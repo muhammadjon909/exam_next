@@ -1,42 +1,38 @@
-.xiz_top{
+/* Header Section */
+.header-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
 
-.xiz_top h1{
+.header-title h1 {
     font-size: 45px;
     margin-left: 50px;
 }
 
-.xis-sit{
+.header-subtitle {
     font-weight: 100;
 }
 
-.xis-sit2{
+.header-highlight {
     color: blueviolet;
 }
 
-.xis-img{
+.header-image {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.xis-img img{
+.header-image img {
     width: 700px;
     margin-left: 50px;
 }
 
-.xis-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.xis-box{
+/* Service Box */
+.service-box {
     width: 90%;
     border: 1px solid;
     height: 700px;
@@ -45,41 +41,52 @@
     background-color: #ffffff11;
     margin: 0 auto;
     margin-bottom: 100px;
+    transition: all 0.3s ease-in-out;
 }
 
-.layot{
+.service-box:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Service Layout */
+.service-layout {
     display: flex;
 }
 
-.layot div p{
+.service-layout div p {
     width: 300px;
     font-size: 18px;
     font-weight: 100;
 }
 
-.ragin12{
+/* Service Content */
+.service-content {
     width: 60%;
     padding: 50px;
     position: relative;
 }
 
-.ragin_img{
+/* Service Image */
+.service-image {
     width: 100%;
     height: 100%;
     border-radius: 0 25px 25px 0;
 }
 
-.ptep{
+/* Service Details */
+.service-detail {
     margin-top: 40px;
 }
 
-.pring{
+.service-description {
     width: 340px;
     font-weight: 100;
     font-size: 18px;
 }
 
-.btn-xis{
+/* Service Button */
+.service-button {
     border-radius: 8px;
     padding: 14px 40px;
     color: #fff;
@@ -88,10 +95,116 @@
     border-bottom: 1px solid #fff;
     margin-top: 50px;
     border-top: 1px solid #fff;
+    transition: all 0.3s ease-in-out;
 }
 
-.postion-p{
+.service-button:hover {
+    transform: scale(1.05);
+    background-color: #ffffff38;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Floating Image */
+.floating-image {
     position: absolute;
     bottom: 0px;
     right: 50px;
+}
+
+/* Footer Banner */
+.footer-banner {
+    background-color: #f3f4f6;
+    padding: 40px;
+    text-align: center;
+    color: #444;
+}
+
+/* Responsive */
+@media screen and (max-width: 450px) {
+    .header-section {
+        flex-direction: column;
+    }
+
+    .header-title h1 {
+        font-size: 35px;
+        margin-left: 0;
+    }
+
+    .header-image {
+        width: 100%;
+    }
+
+    .header-image img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .service-box {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+
+    .service-box>div:nth-child(1) {
+        order: 2;
+    }
+
+    .service-box>div:nth-child(2) {
+        order: 1;
+    }
+
+    .service-content {
+        width: 96%;
+        padding: 20px 10px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-image {
+        width: 100%;
+        height: auto;
+        border-radius: 25px 25px 0 0;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+
+    .floating-image {
+        width: 60px;
+        height: auto;
+        margin-top: 15px;
+        right: 20px;
+        bottom: 0px;
+    }
+
+    .service-layout {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .service-layout div p,
+    .service-description {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .service-button {
+        width: 50%;
+        padding: 12px 0;
+        margin-top: 25px;
+        font-size: 16px;
+        display: block;
+    }
+
+    .service-detail {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .service-content h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
 }

@@ -1,0 +1,120 @@
+{
+  "hero": {
+    "title1": "Yuqori sifatdagi",
+    "title2": "aniqlikka asoslanib",
+    "title3": "istalgan turdagi",
+    "title4": "dasturlarni tayyorlaymiz",
+    "button": "Xizmatlar haqida"
+  },
+  "chime":{
+    "tok1":"Tajribamiz davomida",
+    "tok2":"turli xil hajmdagi",
+    "tok3":"IT loyihalarini",
+    "tok4":"ishga tushira oldik",
+    "tok5":"Loyihalarimiz",
+    "tok6":"biz haqimizda gapirsin !",
+    "tok7":"Tourmad loyihasi",
+    "tok8":"Tourmad – O‘zbekistonning ichki turizimini rivojlantirish maqsadida ishlab chiqilgan bu web sayt o‘zida bir necha service larni o‘z ichiga jamlagan bo‘lib ulardan: Mehmonxona xizmari, Restoran xizmati, Gitlik xizmati, Mashinada sayohat qilish uchun haydovchilar xizmari va boshqa ko‘plab xizmarlarni o‘z ichiga oladi. Bundan tashqari saytdan o‘zingiz uchun qayerlarga boorish kerakligini va qayerlarda xizmat ko‘satish qancha ekanligini ko‘rishingiz va o‘zingiz uchun oldindan buyurtma qilishingiz mumkin.",
+    "tok9":"Loyihani ko’rish",
+    "tok10":"ProRun loyihasi",
+    "tok11":"Prorun.uz – bu saytda tez-tez bo‘lib o‘tadigan yugurish bo‘yicha musobaqalar bo‘lib o‘tadi va siz saytdan ro‘ yxatdan o‘tgan holda istalgan yoki har bir musobaqada qatnashishingiz mumkin.  Nima uchun sayt qurilgan? Musobaqalarda chet ellik ishtirokchilar bo‘lgani bois ularga va boshqa qatnashchilarga ro‘yxatdan o‘tishni oson qilish uchun yangi web ilova ishlab chiqildi.",
+    "tok12":"Xalq trans loyihasi"
+  },
+  "xiz":{
+    "mk":"Har bir xizmat turini",
+    "mk2":"har bir mijoz uchun",
+    "mk3":"alohida ahamiyatli",
+    "mk4":"deb yondoshamiz !",
+    "mk5":"Landing sahifalar",
+    "mk6":"Qisqa va ta'sirli",
+    "mk7":"Mijozni birinchi qarashda qiziqtiradigan va uni keyingi qadamga undaydigan muhim ma'lumotlarni taqdim etadi.",
+    "mk8":"Maqsadli",
+    "mk9":"Aniq maqsadga yo'naltirilgan bo'lib, mijozni maxsus harakatga undashga xizmat qiladi.",
+    "mk10":"Tez yuklanuvchi",
+    "mk11":"Mijozlarning sabr-toqatiga ta'sir qilmaslik uchun iloji boricha tez yuklanadi.",
+    "mk12":"Texnik vazifa tayyorlab berish: 1 kun",
+    "mk13":"Sayt sahifalar soni: 1 (har bir sahifa minimum 5 ta qismdan iborat bo’ladi.)",
+    "mk14":"Veb Dizayn: 10-15 soatlik mehnat.",
+    "mk15":"Buyurtma berish"
+    },
+  "experience": {
+    "years": "7+ yillik",
+    "description1": "Umumiy tajriba",
+    "projects": "5+",
+    "description2": "Yirik loyihalar",
+    "services": "8+",
+    "description3": "Xizmat turlari",
+    "security": "100%",
+    "description4": "Xavfsizlik"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "subtitle": "Qisqacha ma’lumot",
+    "box1": {
+      "title": "Boshlanishi",
+      "text": "Biz --- dan ish boshladik va ---- larni oldimizga maqsad qilib qo’ydik"
+    },
+    "box2": {
+      "title": "Uzoq muddatli loyihalar",
+      "text": "Tajribamiz davomida umumiy hisobda - - loyiha uchun -- - muddatda ishlab topshirdik"
+    },
+    "box3": {
+      "title": "Jamoamiz kengaymoqda",
+      "text": "Jamoamiz safi esa tobora kengaymoqda. Boshida - kishidan boshlangan faoliyatimiz hozirda -- kishi bilan davom etmoqda"
+    }
+  },
+  "more_info": "Bu yerda esa yana ko’proq ma’lumotlar berilishi kerak.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+  "projects": {
+    "title": "Loyihalarimiz",
+    "subtitle": "biz haqimizda gapirsin !",
+    "project1": {
+      "title": "Tourmad loyihasi",
+      "desc": "Tourmad – O‘zbekistonning ichki turizimini rivojlantirish maqsadida ishlab chiqilgan web sayt..."
+    },
+    "project2": {
+      "title": "ProRun loyihasi",
+      "desc": "Prorun.uz – yugurish musobaqalari uchun platforma..."
+    },
+    "project3": {
+      "title": "Xalq trans loyihasi",
+      "desc": "Bu yerda esa yana ko’proq ma’lumotlar berilishi kerak..."
+    },
+    "view_button": "Loyihani ko’rish",
+    "all_button": "Boshqa loyihalarni ko’rish"
+  },
+  "services_section": {
+    "title": "Xizmat turlari",
+    "subtitle": "Dasturlash sohasidagi eng talabgir xizmat turlaridan quyidagilar:"
+  },
+  "services": {
+    "service1": { "title": "Korporativ veb-sayt", "desc": "Mijozlar bilan ishlashni avtomatlashtirish va boshqarish. Katta kompaniyalar yoki mijozlar bilan faol ishlaydigan tashkilotlar...." },
+    "service2": { "title": "E-commerce sayt", "desc": "Shaxsiy yoki kompaniya ishlarini ko‘rsatish. Freelancerlar yoki ijodkorlar uchun o‘z ishlarini targ‘ib qilishda." },
+    "service3": { "title": "CRM tizim", "desc": "O‘z fikrlari, yangiliklari yoki ma'lumotlarini o‘rtoqlashish.Ma'lumot yetkazish, auditoriyani jalb qilish va reklama qilish uchun." },
+    "service4": { "title": "Mobil ilova", "desc": "Mijozlar bilan ishlashni avtomatlashtirish va boshqarish. Katta kompaniyalar yoki mijozlar bilan faol ishlaydigan tashkilotlar." },
+    "service5": { "title": "Landing page", "desc": "Shaxsiy yoki kompaniya ishlarini ko‘rsatish. Freelancerlar yoki ijodkorlar uchun o‘z ishlarini targ‘ib qilishda." },
+    "service6": { "title": "Portal", "desc": "O‘z fikrlari, yangiliklari yoki ma'lumotlarini o‘rtoqlashish.Ma'lumot yetkazish, auditoriyani jalb qilish va reklama qilish uchun." },
+    "service7": { "title": "CMS integratsiyasi", "desc": "O‘z fikrlari, yangiliklari yoki ma'lumotlarini o‘rtoqlashish.Ma'lumot yetkazish, auditoriyani jalb qilish va reklama qilish uchun." },
+    "service8": { "title": "Startap loyihalar", "desc": "Mijozlar bilan ishlashni avtomatlashtirish va boshqarish. Katta kompaniyalar yoki mijozlar bilan faol ishlaydigan tashkilotlar." },
+    "service9": { "title": "Texnik xizmat", "desc": "Kompaniyaning umumiy ma'lumotini taqdim etish, xizmatlar yoki mahsulotlar haqida ma'lumot berish." }
+  },
+  "contact_section": {
+    "title": "Biz bilan aloqa",
+    "subtitle": "Loyihangizni qanday realizatsiya qilish haqida batafsil suhbatlashamiz"
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "portfolio": "Portfolio",
+    "services": "Xizmatlar",
+    "contact": "Aloqa",
+    "project": "Loyiha bormi ?"
+  },
+  "footer": {
+    "team_title": "Bizning jamoa haqida",
+    "developer": "Dasturchi",
+    "consult_title": "Bepul konsultatsiya",
+    "consult_desc": "Loyihangiz bo'yicha boshlang'ich bepul konsultatsiya uchun ma'lumotingizni qoldiring.",
+    "name": "Ismingiz",
+    "phone": "Telefon raqamingiz",
+    "send": "Jo'natish"
+  }
+}
