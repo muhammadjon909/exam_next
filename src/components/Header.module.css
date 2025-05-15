@@ -157,8 +157,8 @@
     display: flex;
     position: fixed;
     top: 0;
-    right: -100%;
-    width: 100%;
+    left: -50%;
+    width: 50%;
     height: 100vh;
     background-color: #0e051a;
     flex-direction: column;
@@ -171,7 +171,7 @@
   }
 
   .mobileMenu.active {
-    right: 0;
+    left: 0;
     opacity: 1;
     visibility: visible;
   }
@@ -198,16 +198,39 @@
     gap: 15px;
   }
 
+  .mobileMenu .select {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .mobileMenu .select:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .mobileMenu .select option {
+    background-color: #0e051a;
+    color: white;
+    padding: 10px;
+  }
+
   .hamburger.active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+    transform: none;
   }
 
   .hamburger.active span:nth-child(2) {
-    opacity: 0;
+    opacity: 1;
   }
 
   .hamburger.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+    transform: none;
   }
 
   .select {

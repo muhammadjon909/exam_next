@@ -80,7 +80,6 @@ export default function Header() {
           <div className={styles.right}>
             <select className={styles.select} value={lang} onChange={handleLangChange}>
               <option value="uz">Uz</option>
-              <option value="en">En</option>
               <option value="ru">Ru</option>
             </select>
             <button className={styles.button}>{t('nav.project')}</button>
